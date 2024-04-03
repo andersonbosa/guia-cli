@@ -44,11 +44,8 @@ setup(
         "langchain_google_genai",
         "python-dotenv>=1.0.1",
     ],
-    entry_points={
-        "console_scripts": [
-            "gu = main:main",
-            "guia = main:main",
-            "gucli = main:main",
-        ],
-    },
+    entry_points=""" 
+        [console_scripts]
+        gu=cli:main
+    """,
 )
