@@ -20,7 +20,7 @@
 
 ## About
 
-Gu IA Agent (Guia-CLI) is an agent specializing in software engineering, designed to assist in programming tasks and provide technical guidance.It is able to generate code based on provided requirements and answer technical questions, offering clear explanations and relevant recommendations.
+Gu IA Agent (aka GuIA-CLI) is an agent specializing in software engineering, designed to assist in programming tasks and provide technical guidance.It is able to generate code based on provided requirements and answer technical questions, offering clear explanations and relevant recommendations.
 
 ## Installation
 
