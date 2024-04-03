@@ -64,19 +64,6 @@ def create_mentoring_skill(_agent):
     )
 
 
-def create_crew(skills):
-    crew = Crew(
-        agents=[
-            _gu_agent,
-        ],
-        tasks=skills,
-        verbose=VERBOSE_OPT,
-        process=Process.sequential,
-    )
-
-    return crew
-
-
 def run_agent(agent, skills, human_input):
     crew = Crew(
         agents=[agent],
@@ -88,19 +75,13 @@ def run_agent(agent, skills, human_input):
     return result
 
 
-# CONSTANTS
-
-
 def gu_is_coding(gu, human_input):
     print(f"[+] Gu is coding: {human_input}")
-
     skill = create_programming_skill(gu)
-
     return run_agent(gu, [skill], human_input)
 
 
 def gu_is_mentoring(gu, human_input):
     print(f"[+] Gu is mentoring: {human_input}")
-
     skill = create_mentoring_skill(gu)
     return run_agent(gu, [skill], human_input)
