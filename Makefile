@@ -1,7 +1,7 @@
 SETUPPY_VERSION := $(shell grep -P "^__VERSION__" setup.py | awk '{print $$3}' )
 
-run:
-	./.venv/bin/python main.py
+develop:
+	pip install --editable .
 build-clean:
 	rm -rf -- ./dist ./build ./**.egg-info ./*.egg-info ./**/__pycache__ ./__pycache__
 build-package:

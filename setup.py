@@ -24,7 +24,7 @@ setup(
     long_description_content_type="text/markdown",
     keywords="IA assistant gemini-pro",
     url="https://github.com/andersonbosa/guia-cli",
-    license="MIT",
+    license="CC0-1.0",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Console",

@@ -23,7 +23,7 @@
 
 ## About
 
-Gu IA Agent (aka GuIA-CLI) is an agent specializing in software engineering, designed to assist in programming tasks and provide technical guidance.It is able to generate code based on provided requirements and answer technical questions, offering clear explanations and relevant recommendations.
+GUIA-CLI (aka Gu IA Agent) is an agent specializing in software engineering, designed to assist in programming tasks and provide technical guidance.It is able to generate code based on provided requirements and answer technical questions, offering clear explanations and relevant recommendations.
 
 ## Installation
 
@@ -53,7 +53,7 @@ python setup.py install
 
 ## Getting Started
 
-To use the GU agent, you can execute the script `main.py` providing the following options:
+To use the Gu agent, you can execute the script `main.py` providing the following options:
 
 - `--coding "YOUR REQUEST"`: Uses Gu agent programming ability to generate code based on your request.
 - `--mentoring "YOUR QUESTION"`: Uses Gu agent mentoring ability to receive technical guidance in response to your question.
@@ -63,6 +63,12 @@ To use the GU agent, you can execute the script `main.py` providing the followin
 Be sure to configure the following environment variables or it is setup in the `.env` file:
 
 - `GOOGLE_API_KEY`: Your Google API key to use Gemini service (required)
+
+```bash
+export GOOGLE_API_KEY="qwerty12345example"
+```
+
+- Tip: Go to https://aistudio.google.com/app/apikey to get a GOOGLE_API_KEY
 
 #### Example of use
 
@@ -76,7 +82,7 @@ python main.py --mentoring "What is the difference between inheritance and compo
 
 #### Backup results
 
-The results of interactions with agent GU are saved in the `outputs` folder. Each file generated contains the date, type of interaction and a description of the request.
+The results of interactions with agent Gu are saved in the `outputs` folder. Each file generated contains the date, type of interaction and a description of the request.
 
 
 ## 🤝 Contribution

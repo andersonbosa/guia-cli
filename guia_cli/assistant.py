@@ -7,7 +7,6 @@ from guia_cli.llm_client import create_llm_client
 
 # CONSTANTS
 load_dotenv()
-ENV_MODE = getenv("ENV", "development")
 GEMINI_API_KEY = getenv("GOOGLE_API_KEY")
 LLM_MODEL = create_llm_client(api_key=GEMINI_API_KEY, model="gemini-pro")
 VERBOSE_OPT = 0
