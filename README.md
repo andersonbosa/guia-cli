@@ -1,9 +1,6 @@
+
 <section align="center">
-
-
-![](docs/assets/images/banner.svg)
-
-
+  <img src="docs/assets/images/banner.svg" title="Project banner" alt="Project banner" />
   <br>
   <br>
 
@@ -59,7 +56,7 @@ To use the GU agent, you can execute the script `main.py` providing the followin
 
 #### Settings
 
-Be sure to configure the following environment variables in the `.env` file:
+Be sure to configure the following environment variables or it is setup in the `.env` file:
 
 - `GOOGLE_API_KEY`: Your Google API key to use Gemini service (required)
 
