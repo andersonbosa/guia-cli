@@ -2,17 +2,17 @@ import os
 from setuptools import setup, find_packages
 
 
-def iopen(filepath):
-    absolute_path_relative_to_setuppy = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        filepath,
-    )
+def read_file(filepath):
+    setuppy_dir = os.path.dirname(os.path.abspath(__file__))
+    absolute_path_relative_to_setuppy = os.path.join(setuppy_dir, filepath)
     with open(absolute_path_relative_to_setuppy) as f:
-        requirements = f.read()
+        file_content = f.read()
+    return file_content
 
 
-requirements = iopen("requirements.txt").splitlines()
-readme_text = iopen("README.md")
+REQUIREMENTS_LIST = read_file("requirements.txt").splitlines()
+README_TEXT = read_file("../README.md")
+
 
 # https://packaging.python.org/en/latest/key_projects/#setuptools
 setup(
@@ -20,7 +20,7 @@ setup(
     version="0.1",
     author="Anderson Bosa",
     description="IA Agent, specializes in software engineering, aiding in coding tasks and providing technical guidance.",
-    long_description=readme_text,
+    long_description=README_TEXT,
     keywords="IA assistant gemini-pro",
     url="https://github.com/andersonbosa/guia-cli",
     license="MIT",
@@ -37,7 +37,7 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=REQUIREMENTS_LIST,
     entry_points={
         "console_scripts": [
             "gu = guia_cli.main:main",
