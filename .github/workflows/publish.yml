@@ -40,7 +40,7 @@ jobs:
       - name: Build and publish
         run: |
           python guia-cli/setup.py sdist
-          twine --verbose upload dist/*
+          twine upload --verbose  dist/*
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}

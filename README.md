@@ -1,6 +1,8 @@
 <section align="center">
 
-  <img src="docs/assets/images/banner.svg" title="Project banner" alt="Project banner" />
+
+![](docs/assets/images/banner.svg)
+
 
   <br>
   <br>
