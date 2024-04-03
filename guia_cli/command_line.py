@@ -4,7 +4,7 @@ import sys
 import re
 from datetime import datetime
 
-from assistant import create_gu_agent, gu_is_coding, gu_is_mentoring
+from guia_cli.assistant import create_gu_agent, gu_is_coding, gu_is_mentoring
 
 
 def use_argparse():

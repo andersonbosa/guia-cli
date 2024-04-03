@@ -1,6 +1,10 @@
 
 [![Publish to PyPI](https://github.com/andersonbosa/guia-cli/actions/workflows/publish.yml/badge.svg)](https://pypi.org/project/guia-cli/)
+[![Creative Commons](https://img.shields.io/badge/license-CC0%201.0-white.svg?style=flat)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![https://img.shields.io/badge/made%20with-AI-blue](https://img.shields.io/badge/made%20with-AI-blue)](#)
 
+
+---
 <section align="center">
   <img src="docs/assets/images/banner.svg" title="Project banner" alt="Project banner" />
   <br>

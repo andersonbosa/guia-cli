@@ -3,7 +3,7 @@ from os import getenv
 from crewai import Agent, Crew, Process, Task
 from dotenv import load_dotenv
 
-from llm_client import create_llm_client
+from guia_cli.llm_client import create_llm_client
 
 # CONSTANTS
 load_dotenv()

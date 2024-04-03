@@ -37,6 +37,7 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     packages=find_packages(),
+    py_modules=["guia_cli"],
     include_package_data=True,
     python_requires=">=3.10",
     install_requires=[
@@ -44,8 +45,9 @@ setup(
         "langchain_google_genai",
         "python-dotenv>=1.0.1",
     ],
-    entry_points=""" 
-        [console_scripts]
-        gu=cli:main
-    """,
+    entry_points={
+        "console_scripts": [
+            "gu=guia_cli.command_line:main",
+        ]
+    },
 )
