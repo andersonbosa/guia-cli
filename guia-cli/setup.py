@@ -21,6 +21,7 @@ setup(
     author="Anderson Bosa",
     description="IA Agent, specializes in software engineering, aiding in coding tasks and providing technical guidance.",
     long_description=README_TEXT,
+    long_description_content_type="text/markdown",
     keywords="IA assistant gemini-pro",
     url="https://github.com/andersonbosa/guia-cli",
     license="MIT",
