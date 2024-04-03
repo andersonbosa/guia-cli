@@ -3,49 +3,14 @@ from os import getenv
 from crewai import Agent, Crew, Process, Task
 from dotenv import load_dotenv
 
+from llm_client import create_llm_client
+
 # CONSTANTS
 load_dotenv()
 ENV_MODE = getenv("ENV", "development")
 GEMINI_API_KEY = getenv("GOOGLE_API_KEY")
 LLM_MODEL = create_llm_client(api_key=GEMINI_API_KEY, model="gemini-pro")
 VERBOSE_OPT = 0
-
-from langchain_google_genai import ChatGoogleGenerativeAI
-
-
-class UnsupportedModelError(Exception):
-    pass
-
-
-def create_llm_client(api_key, model, verbose=True, temperature=0.1):
-    if model == "gemini-pro":
-        return ChatGoogleGenerativeAI(
-            model=model,
-            verbose=verbose,
-            temperature=temperature,
-            google_api_key=api_key,
-        )
-
-    raise UnsupportedModelError(f"Unsupported model: {model}")
-
-
-class LLMClient:
-    def __init__(self, api_key, model, verbose=True, temperature=0.1):
-        self.llm = self.__create_llm_client(api_key, model, verbose, temperature)
-
-    def __create_llm_client(self, api_key, model, verbose, temperature):
-        if model == "gemini-pro":
-            return ChatGoogleGenerativeAI(
-                model=model,
-                verbose=verbose,
-                temperature=temperature,
-                google_api_key=api_key,
-            )
-
-        raise UnsupportedModelError(f"Unsupported model: {model}")
-
-    def get_response(self, input_text):
-        return self.llm.generate_response(input_text)
 
 
 def create_gu_agent():
