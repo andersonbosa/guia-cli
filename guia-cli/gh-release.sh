@@ -6,7 +6,6 @@ RELEASE_MESSAGE="$2"
 
 if [ -z "$1" ]; then
   echo '[ERROR] Please enter the release version as an argument.'
-  echo
   echo '[USAGE] bash .release.sh <version>'
   echo '        bash .release.sh 0.0.1'
   exit 1
