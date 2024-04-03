@@ -17,7 +17,7 @@ README_TEXT = read_file("../README.md")
 # https://packaging.python.org/en/latest/key_projects/#setuptools
 setup(
     name="guia_cli",
-    version="0.0.2",
+    version="0.0.3",
     author="Anderson Bosa",
     description="Gu, a simple IA agent that specializes in software engineering, aiding in coding tasks and providing technical guidance.",
     long_description=README_TEXT,
