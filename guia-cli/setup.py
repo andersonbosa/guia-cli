@@ -1,18 +1,18 @@
 import os
 from setuptools import setup, find_packages
 
-with open(
-    os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        "requirements.txt",
-    )
-) as f:
-    requirements = f.read().splitlines()
 
-try:
-    readme_text = file("README.md", "r").read()
-except BaseException:
-    readme_text = open("README.md", "r").read()
+def iopen(filepath):
+    absolute_path_relative_to_setuppy = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        filepath,
+    )
+    with open(absolute_path_relative_to_setuppy) as f:
+        requirements = f.read()
+
+
+requirements = iopen("requirements.txt").splitlines()
+readme_text = iopen("README.md")
 
 # https://packaging.python.org/en/latest/key_projects/#setuptools
 setup(
