@@ -10,7 +10,7 @@ def read_file(filepath):
     return file_content
 
 
-__VERSION__ = "0.0.9"
+__VERSION__ = "0.0.10"
 README_TEXT = read_file("README.md")
 
 
