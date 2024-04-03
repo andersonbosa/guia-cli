@@ -1,20 +1,19 @@
 from setuptools import setup, find_packages
 
+with open("requirements.txt") as f:
+    requirements = f.read().splitlines()
+
 setup(
-    name="gucli",
+    name="guia-cli",
     version="0.1",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        "shared-playground-crewai @ git+https://github.com/andersonbosa/playground-crewai.git@branch#subdirectory=projects/shared",
-        "crewai",
-        "python-dotenv",
-    ],
+    install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "gu = cli.main:main",
-            "guia = cli.main:main",
-            "gucli = cli.main:main",
+            "gu = guia-cli.main:main",
+            "guia = guia-cli.main:main",
+            "gucli = guia-cli.main:main",
         ],
     },
 )
