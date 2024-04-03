@@ -9,9 +9,32 @@ with open(
 ) as f:
     requirements = f.read().splitlines()
 
+try:
+    readme_text = file("README.md", "r").read()
+except BaseException:
+    readme_text = open("README.md", "r").read()
+
+# https://packaging.python.org/en/latest/key_projects/#setuptools
 setup(
     name="guia_cli",
     version="0.1",
+    author="Anderson Bosa",
+    description="IA Agent, specializes in software engineering, aiding in coding tasks and providing technical guidance.",
+    long_description=readme_text,
+    keywords="IA assistant gemini-pro",
+    url="https://github.com/andersonbosa/guia-cli",
+    license="MIT",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Environment :: Console",
+        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: End Users/Desktop",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
     packages=find_packages(),
     include_package_data=True,
     install_requires=requirements,
