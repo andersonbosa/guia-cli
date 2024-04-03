@@ -10,7 +10,7 @@ def read_file(filepath):
     return file_content
 
 
-__VERSION__ = "0.0.5"
+__VERSION__ = "0.0.6"
 REQUIREMENTS_LIST = read_file("requirements.txt").splitlines()
 README_TEXT = read_file("../README.md")
 
