@@ -1,10 +1,10 @@
 
+[![Publish to PyPI](https://github.com/andersonbosa/guia-cli/actions/workflows/publish.yml/badge.svg)](https://pypi.org/project/guia-cli/)
+
 <section align="center">
   <img src="docs/assets/images/banner.svg" title="Project banner" alt="Project banner" />
   <br>
   <br>
-
-  <!-- badges -->
 
   <p>
     <a href="#about">About</a> •

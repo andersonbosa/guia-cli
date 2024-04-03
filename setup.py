@@ -45,9 +45,9 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "gu = guia_cli.main:main",
-            "guia = guia_cli.main:main",
-            "gucli = guia_cli.main:main",
+            "gu = main:main",
+            "guia = main:main",
+            "gucli = main:main",
         ],
     },
 )
