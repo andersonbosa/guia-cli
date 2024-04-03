@@ -3,5 +3,8 @@ run:
 
 
 build-package:
-	python3 setup.py sdist bdist bdist_egg
+	# python -m build -sdist
+	python3 setup.py sdist
 
+build-clean:
+	rm -rf -- ./dist
