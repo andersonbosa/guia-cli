@@ -38,6 +38,7 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
+    python_requires=">=3.10",
     install_requires=[
         "crewai>=0.19.0",
         "langchain_google_genai",
