@@ -19,7 +19,7 @@ setup(
     name="guia_cli",
     version="0.0.2",
     author="Anderson Bosa",
-    description="IA Agent, specializes in software engineering, aiding in coding tasks and providing technical guidance.",
+    description="Gu, a simple IA agent that specializes in software engineering, aiding in coding tasks and providing technical guidance.",
     long_description=README_TEXT,
     long_description_content_type="text/markdown",
     keywords="IA assistant gemini-pro",
