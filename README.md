@@ -8,8 +8,8 @@
   <!-- badges -->
 
   <p>
-    <a href="#about">About</a> •
-    <a href="#technologies">Technologies</a> •
+    <a href="#About">About</a> •
+    <a href="#Installation">Installation</a> •
     <a href="#getting-started">Getting Started</a> •
     <a href="#contribution">Contribution</a> •
     <a href="#license">License</a>
@@ -18,52 +18,57 @@
 
 ---
 
+## About
 
-<h2 id="about">💬 About</h2>
+Gu IA is an agent specializing in software engineering, designed to assist in programming tasks and provide technical guidance.It is able to generate code based on provided requirements and answer technical questions, offering clear explanations and relevant recommendations.
 
-This is a collection of some sample models for you to use in your projects. Among them are, for example:
+## Installation
 
-* Github templates
-* Github workflows
-  * Application security testing samples
+TBD
 
-To use the template, check some of the validations to be made in [template-checklist.md](docs/template-checklist.md)
+## Getting Started
+
+To use the GU agent, you can execute the script `main.py` providing the following options:
+
+- `--coding "YOUR REQUEST"`: Uses Gu agent programming ability to generate code based on your request.
+- `--mentoring "YOUR QUESTION"`: Uses Gu agent mentoring ability to receive technical guidance in response to your question.
+
+### Settings
+
+Be sure to configure the following environment variables in the `.env` file:
+
+- `GOOGLE_API_KEY`: Your Google API key to use Gemini service (required)
+
+### Example of use
+
+```bash
+python main.py --coding "Implement a function to order a Python list using bubble-sort"
+```
+
+```bash
+python main.py --mentoring "What is the difference between inheritance and composition in object -oriented programming?"
+```
+
+### Backup results
+
+The results of interactions with agent GU are saved in the `outputs` folder. Each file generated contains the date, type of interaction and a description of the request.
 
 
-<h2 id="technologies"> 🛠️ Technologies</h2>
-
-* [Markdown](https://www.markdownguide.org/) - used in documentations
-* [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) - used in project banner
-* [XHTML](https://www.w3docs.com/learn-html/xhtml-extensible-hypertext-markup-language.html) - used in project banner to add our style
-
-
-<h2 id="getting-started"> 🚶 Getting Started</h2>
-
-* Checkout the [documentation](docs/getting-started.md)
-
-<h2>🚀 Deploy</h2>
-
-* Distributed here, in [Github](https://github.com/andersonbosa/dothub)
-
-
-<h2 id="contribution">🤝 Contribution</h2>
+## 🤝 Contribution
 
 <p>
   This project is for study purposes too, so please send me a message telling me what you are doing and why you are doing it, teach me what you know. All kinds of contributions are very welcome and appreciated!
 </p>
 
 
-
-<h2 id="license"> 📝 License</h2>
+ ## 📝 License
 
 This project is under the MIT license.
 
 ---
 
 <h4>  
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/andersonbosa/dothub?style=social">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/andersonbosa/guia-cli?style=social">
   | Did you like the repository? Give it a star! 😁
 </h4>
 
-
-<!-- Links -->
