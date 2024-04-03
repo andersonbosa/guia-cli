@@ -10,6 +10,7 @@ def read_file(filepath):
     return file_content
 
 
+__VERSION__ = "0.0.4"
 REQUIREMENTS_LIST = read_file("requirements.txt").splitlines()
 README_TEXT = read_file("../README.md")
 
@@ -17,7 +18,7 @@ README_TEXT = read_file("../README.md")
 # https://packaging.python.org/en/latest/key_projects/#setuptools
 setup(
     name="guia_cli",
-    version="0.0.3",
+    version=__VERSION__,
     author="Anderson Bosa",
     description="Gu, a simple IA agent that specializes in software engineering, aiding in coding tasks and providing technical guidance.",
     long_description=README_TEXT,

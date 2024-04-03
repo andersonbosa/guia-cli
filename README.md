@@ -10,8 +10,8 @@
   <!-- badges -->
 
   <p>
-    <a href="#About">About</a> •
-    <a href="#Installation">Installation</a> •
+    <a href="#about">About</a> •
+    <a href="#installation">Installation</a> •
     <a href="#getting-started">Getting Started</a> •
     <a href="#contribution">Contribution</a> •
     <a href="#license">License</a>
@@ -26,7 +26,29 @@ Gu IA Agent (aka GuIA-CLI) is an agent specializing in software engineering, des
 
 ## Installation
 
-TBD
+You can install Guia-CLI via PyPI using pip:
+
+```bash
+pip install guia-cli
+```
+
+Alternatively, you can build from the repository:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/andersonbosa/guia-cli.git
+```
+
+2. Navigate to the repository directory:
+```bash
+cd repo
+```
+
+3. Install the package:
+```bash
+python setup.py install
+```
+
 
 ## Getting Started
 
@@ -35,13 +57,13 @@ To use the GU agent, you can execute the script `main.py` providing the followin
 - `--coding "YOUR REQUEST"`: Uses Gu agent programming ability to generate code based on your request.
 - `--mentoring "YOUR QUESTION"`: Uses Gu agent mentoring ability to receive technical guidance in response to your question.
 
-### Settings
+#### Settings
 
 Be sure to configure the following environment variables in the `.env` file:
 
 - `GOOGLE_API_KEY`: Your Google API key to use Gemini service (required)
 
-### Example of use
+#### Example of use
 
 ```bash
 python main.py --coding "Implement a function to order a Python list using bubble-sort"
@@ -51,7 +73,7 @@ python main.py --coding "Implement a function to order a Python list using bubbl
 python main.py --mentoring "What is the difference between inheritance and composition in object -oriented programming?"
 ```
 
-### Backup results
+#### Backup results
 
 The results of interactions with agent GU are saved in the `outputs` folder. Each file generated contains the date, type of interaction and a description of the request.
 
@@ -63,7 +85,7 @@ The results of interactions with agent GU are saved in the `outputs` folder. Eac
 </p>
 
 
- ## 📝 License
+## 📝 License
 
 This project is under the MIT license.
 
