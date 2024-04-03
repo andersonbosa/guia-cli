@@ -37,7 +37,7 @@ jobs:
 
       - name: Build and publish
         run: |
-          python setup.py sdist
+          python guia-cli/setup.py sdist
           twine upload dist/*
         env:
           TWINE_USERNAME: __token__
