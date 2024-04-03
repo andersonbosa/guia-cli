@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          cd guia-cli
+          echo $(pwd)
           python -m pip install --upgrade pip 
           python -m pip install --upgrade setuptools wheel twine
           pip install -r requeriments.txt
