@@ -71,8 +71,8 @@
             'Apple Color Emoji',
             'Segoe UI Emoji';
 
-          background: linear-gradient(-45deg, #845EC2, #C493FF, #FEFEDF, #D5CABD);
-          background-size: 700% 200%;
+          background: rgb(90,212,92);
+          background: linear-gradient(0deg, rgba(90,212,92,1) 0%, rgba(255,214,127,1) 100%);          background-size: 700% 200%;
           animation: gradientBackground 8s ease infinite;
           border-radius: 10px;
           color: white;
