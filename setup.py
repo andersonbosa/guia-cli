@@ -12,7 +12,7 @@ def read_file(filepath):
 
 __VERSION__ = "0.0.6"
 REQUIREMENTS_LIST = read_file("requirements.txt").splitlines()
-README_TEXT = read_file("../README.md")
+README_TEXT = read_file("README.md")
 
 
 # https://packaging.python.org/en/latest/key_projects/#setuptools

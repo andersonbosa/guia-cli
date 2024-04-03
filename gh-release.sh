@@ -11,6 +11,8 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+git add --all && git commit --allow-empty --message "release: $VERSION" && git push
+
 # Creates the release
 gh release create $VERSION --title "$VERSION" --notes "$RELEASE_MESSAGE"
 
