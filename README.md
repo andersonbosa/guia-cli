@@ -88,7 +88,7 @@ The results of interactions with agent GU are saved in the `outputs` folder. Eac
 
 ## 📝 License
 
-This project is under the MIT license.
+This project is under the [public domain](LICENSE.md) license.
 
 ---
 
