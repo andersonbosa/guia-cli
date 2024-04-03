@@ -10,8 +10,7 @@ def read_file(filepath):
     return file_content
 
 
-__VERSION__ = "0.0.6"
-REQUIREMENTS_LIST = read_file("requirements.txt").splitlines()
+__VERSION__ = "0.0.7"
 README_TEXT = read_file("README.md")
 
 
@@ -39,7 +38,11 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
-    install_requires=REQUIREMENTS_LIST,
+    install_requires=[
+        "crewai>=0.19.0",
+        "langchain_google_genai",
+        "python-dotenv>=1.0.1",
+    ],
     entry_points={
         "console_scripts": [
             "gu = guia_cli.main:main",
