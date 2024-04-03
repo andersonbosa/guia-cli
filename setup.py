@@ -38,6 +38,7 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
+    python_requires=">=3.10",
     install_requires=[
         "crewai>=0.19.0",
         "langchain_google_genai",
@@ -45,9 +46,9 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "gu = guia_cli.main:main",
-            "guia = guia_cli.main:main",
-            "gucli = guia_cli.main:main",
+            "gu = main:main",
+            "guia = main:main",
+            "gucli = main:main",
         ],
     },
 )
