@@ -42,7 +42,7 @@ git clone https://github.com/andersonbosa/guia-cli.git
 
 2. Navigate to the repository directory:
 ```bash
-cd repo
+cd guia-cli
 ```
 
 3. Install the package:
@@ -53,10 +53,12 @@ python setup.py install
 
 ## Getting Started
 
-To use the Gu agent, you can execute the script `main.py` providing the following options:
+To use the Gu agent, you can execute the command `gu` providing the following options:
 
 - `--coding "YOUR REQUEST"`: Uses Gu agent programming ability to generate code based on your request.
 - `--mentoring "YOUR QUESTION"`: Uses Gu agent mentoring ability to receive technical guidance in response to your question.
+
+![Demo image of command --help](docs/demo1.png)
 
 #### Settings
 
@@ -73,11 +75,11 @@ export GOOGLE_API_KEY="qwerty12345example"
 #### Example of use
 
 ```bash
-python main.py --coding "Implement a function to order a Python list using bubble-sort"
+gu --coding "Implement a function to order a Python list using bubble-sort"
 ```
 
 ```bash
-python main.py --mentoring "What is the difference between inheritance and composition in object -oriented programming?"
+gu --mentoring "What is the difference between inheritance and composition in object -oriented programming?"
 ```
 
 #### Backup results
@@ -88,7 +90,7 @@ The results of interactions with agent Gu are saved in the `outputs` folder. Eac
 ## 🤝 Contribution
 
 <p>
-  This project is for study purposes too, so please send me a message telling me what you are doing and why you are doing it, teach me what you know. All kinds of contributions are very welcome and appreciated!
+  All kinds of contributions are very welcome and appreciated! This project is for study purposes too, so please send me a message telling me what you are doing and why you are doing it, teach me what you know.
 </p>
 
 
