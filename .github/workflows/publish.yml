@@ -3,9 +3,11 @@ name: Publish to PyPI
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  # Runs on pushes targeting the default branch
+
+  # Runs when a new tag is pushed that follows Semantic Versioning (SemVer) pattern
   push:
-    branches: ["main"]
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
 
 jobs:
   publish:
